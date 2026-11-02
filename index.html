@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Price Prediction | FDS Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="#home">
+      <span>FDS</span>
+      <small>Mobile Price Prediction</small>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#data">Data</a>
+      <a href="#cleaning">Cleaning</a>
+      <a href="#model">Prediction</a>
+      <a href="#ethics">Ethics</a>
+    </div>
+    <a class="nav-cta" href="#model">Check Price ↗</a>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">
+        <span class="pulse-dot"></span>
+        FUNDAMENTALS OF DATA SCIENCE
+      </p>
+
+      <h1>Mobile Price<br><span>Prediction</span></h1>
+
+      <p class="hero-description">
+        An end-to-end Data Science mini project exploring mobile
+        specifications, data preparation, visual insights and price estimation.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#data" class="btn primary">Explore Project <span>↘</span></a>
+        <a href="#model" class="btn secondary">Check Mobile Price</a>
+      </div>
+
+      <div class="hero-footnote">
+        <span class="tiny-line"></span>
+        COLLECT · CLEAN · ANALYZE · PREDICT
+      </div>
+    </div>
+
+    <div class="hero-card reveal">
+      <div class="phone-visual">
+        <div class="phone-camera"></div>
+        <div class="phone-screen">
+          <span>01</span>
+          <div class="phone-wave"></div>
+          <small>SMARTPHONE DATA</small>
+        </div>
+      </div>
+
+      <div class="hero-card-caption">
+        <div>
+          <p class="muted-label">PROJECT FOCUS</p>
+          <h3>From Data to Insight</h3>
+        </div>
+        <span class="round-arrow">↗</span>
+      </div>
+
+      <div class="mini-stats">
+        <div><strong>CSV</strong><small>Dataset</small></div>
+        <div><strong>EDA</strong><small>Analysis</small></div>
+        <div><strong>ML</strong><small>Prediction</small></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PROJECT WORKFLOW -->
+    <section class="section overview">
+      <div class="section-title reveal">
+        <p class="section-kicker">PROJECT WORKFLOW</p>
+        <h2>From Raw Data to Prediction</h2>
+        <p class="section-description">
+          A clear workflow for completing the Data Science mini project.
+        </p>
+      </div>
+
+      <div class="workflow-grid">
+        <article class="workflow-card reveal">
+          <span class="step-number">01</span>
+          <div class="step-icon">↘</div>
+          <h3>Data Collection</h3>
+          <p>Gather mobile specifications and price records from a documented source.</p>
+          <span class="step-tag">RAW DATA</span>
+        </article>
+
+        <article class="workflow-card reveal">
+          <span class="step-number">02</span>
+          <div class="step-icon">⌁</div>
+          <h3>Data Cleaning</h3>
+          <p>Inspect missing values, duplicates, data types and unusual values.</p>
+          <span class="step-tag">PREPROCESSING</span>
+        </article>
+
+        <article class="workflow-card reveal">
+          <span class="step-number">03</span>
+          <div class="step-icon">◫</div>
+          <h3>EDA & Insights</h3>
+          <p>Use descriptive statistics and visual analysis to explore patterns.</p>
+          <span class="step-tag">EXPLORATION</span>
+        </article>
+
+        <article class="workflow-card reveal">
+          <span class="step-number">04</span>
+          <div class="step-icon">✳</div>
+          <h3>ML Modeling</h3>
+          <p>Train and evaluate a model before connecting it to the website.</p>
+          <span class="step-tag">PREDICTION</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- DATA COLLECTION -->
+    <section id="data" class="section section-alt">
+      <div class="section-title reveal">
+        <p class="section-kicker">01 · DATA COLLECTION</p>
+        <h2>Understanding the Dataset</h2>
+        <p class="section-description">
+          Example records showing the kind of fields your final dataset may contain.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card reveal">
+          <span class="stat-label">DATA SOURCE</span>
+          <strong>CSV</strong>
+          <p>Structured data file</p>
+        </article>
+
+        <article class="stat-card reveal">
+          <span class="stat-label">FEATURES</span>
+          <strong>20+</strong>
+          <p>Potential mobile attributes</p>
+        </article>
+
+        <article class="stat-card reveal">
+          <span class="stat-label">TARGET</span>
+          <strong>Price</strong>
+          <p>Value to estimate</p>
+        </article>
+
+        <article class="stat-card reveal">
+          <span class="stat-label">PURPOSE</span>
+          <strong>Insights</strong>
+          <p>Understand price patterns</p>
+        </article>
+      </div>
+
+      <div class="table-container reveal">
+        <div class="table-header">
+          <div>
+            <h3>Illustrative Dataset Preview</h3>
+            <p>Example rows only — not a verified live dataset.</p>
+          </div>
+          <span class="pill">SAMPLE DATA</span>
+        </div>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>RAM</th>
+                <th>Storage</th>
+                <th>Battery</th>
+                <th>Camera</th>
+                <th>Example Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apple</td><td>iPhone 16</td><td>8 GB*</td>
+                <td>128 GB</td><td>—</td><td>48 MP</td><td>₹89,900*</td>
+              </tr>
+              <tr>
+                <td>Samsung</td><td>Galaxy S25</td><td>12 GB</td>
+                <td>256 GB</td><td>4000 mAh</td><td>50 MP</td><td>₹80,999*</td>
+              </tr>
+              <tr>
+                <td>OnePlus</td><td>OnePlus 13</td><td>12 GB</td>
+                <td>256 GB</td><td>6000 mAh</td><td>50 MP</td><td>₹69,999*</td>
+              </tr>
+              <tr>
+                <td>Xiaomi</td><td>Xiaomi 15</td><td>12 GB</td>
+                <td>512 GB</td><td>5240 mAh</td><td>50 MP</td><td>₹64,999*</td>
+              </tr>
+              <tr>
+                <td>Realme</td><td>Realme GT 7</td><td>12 GB</td>
+                <td>256 GB</td><td>7000 mAh</td><td>50 MP</td><td>₹42,999*</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="fine-print">
+          *Illustrative values only. Verify prices, specifications and dataset source before submitting the project.
+        </p>
+      </div>
+    </section>
+
+    <!-- DATA CLEANING -->
+    <section id="cleaning" class="section">
+      <div class="section-title reveal">
+        <p class="section-kicker">02 · DATA CLEANING</p>
+        <h2>Preparing Reliable Data</h2>
+        <p class="section-description">
+          Cleaning decisions should be based on what is actually found in your dataset.
+        </p>
+      </div>
+
+      <div class="cleaning-grid">
+        <article class="clean-card reveal">
+          <span class="check-icon">✓</span>
+          <h3>Missing Values</h3>
+          <p>Measure missing data and choose suitable handling methods.</p>
+          <span class="status-label">CHECK REQUIRED</span>
+        </article>
+
+        <article class="clean-card reveal">
+          <span class="check-icon">✓</span>
+          <h3>Duplicate Records</h3>
+          <p>Find repeated rows and remove only confirmed duplicates.</p>
+          <span class="status-label">CHECK REQUIRED</span>
+        </article>
+
+        <article class="clean-card reveal">
+          <span class="check-icon">✓</span>
+          <h3>Data Types</h3>
+          <p>Convert columns into appropriate numerical or categorical types.</p>
+          <span class="status-label">CHECK REQUIRED</span>
+        </article>
+
+        <article class="clean-card reveal">
+          <span class="check-icon">✓</span>
+          <h3>Outliers</h3>
+          <p>Investigate unusual values instead of removing them automatically.</p>
+          <span class="status-label">CHECK REQUIRED</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- MOBILE PRICE CHECKER -->
+    <section id="model" class="section prediction-section">
+      <div class="section-title reveal">
+        <p class="section-kicker">03 · MOBILE PRICE CHECKER</p>
+        <h2>Find a Mobile Price</h2>
+        <p class="section-description">
+          Choose a phone model to view its stored reference price or a clearly labelled used-phone estimate.
+        </p>
+      </div>
+
+      <div class="prediction-box reveal">
+        <div class="prediction-top">
+          <div>
+            <p class="muted-label">DEVICE DETAILS</p>
+            <h3>Select Your Mobile</h3>
+            <p class="form-help">
+              The current demo uses manually entered reference prices, not a trained ML model.
+            </p>
+          </div>
+          <div class="prediction-symbol">⌁</div>
+        </div>
+
+        <div class="inputs">
+          <div class="input-group">
+            <label for="brand">Brand</label>
+            <select id="brand">
+              <option value="">Select Brand</option>
+              <option value="apple">Apple</option>
+              <option value="samsung">Samsung</option>
+              <option value="oneplus">OnePlus</option>
+              <option value="xiaomi">Xiaomi</option>
+              <option value="realme">Realme</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="modelName">Model</label>
+            <select id="modelName" disabled>
+              <option value="">Select Model</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="storage">Storage</label>
+            <select id="storage" disabled>
+              <option value="">Select Storage</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="condition">Condition</label>
+            <select id="condition">
+              <option value="new">Brand New</option>
+              <option value="used">Used (rough estimate)</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="predict-btn" id="predictButton" type="button">
+          Check Reference Price <span>↗</span>
+        </button>
+
+        <div id="result" class="result" aria-live="polite">
+          <div class="result-symbol">₹</div>
+          <p class="muted-label">PRICE RESULT</p>
+          <h3>Your price appears here</h3>
+          <p id="predictionText">
+            Select brand, model and storage to continue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODEL EVALUATION -->
+    <section class="section section-alt">
+      <div class="section-title reveal">
+        <p class="section-kicker">04 · MODEL EVALUATION</p>
+        <h2>Measure Model Performance</h2>
+        <p class="section-description">
+          For price prediction, use regression metrics computed from your trained model.
+        </p>
+      </div>
+
+      <div class="metrics-grid">
+        <article class="metric-card reveal">
+          <span>MAE</span>
+          <h3>—</h3>
+          <p>Mean Absolute Error</p>
+        </article>
+
+        <article class="metric-card reveal">
+          <span>RMSE</span>
+          <h3>—</h3>
+          <p>Root Mean Squared Error</p>
+        </article>
+
+        <article class="metric-card reveal">
+          <span>R² SCORE</span>
+          <h3>—</h3>
+          <p>Explained variance indicator</p>
+        </article>
+      </div>
+
+      <p class="fine-print reveal">
+        Metrics are left blank until a real model is trained and evaluated.
+        Accuracy, precision, recall and F1 are generally classification metrics,
+        not the primary metrics for continuous price prediction.
+      </p>
+    </section>
+
+    <!-- ETHICAL REVIEW -->
+    <section id="ethics" class="section">
+      <div class="section-title reveal">
+        <p class="section-kicker">05 · ETHICAL REVIEW</p>
+        <h2>Responsible Data Science</h2>
+        <p class="section-description">
+          Document limitations and make the results transparent to users.
+        </p>
+      </div>
+
+      <div class="ethics-grid">
+        <article class="ethic-card reveal">
+          <span>01</span>
+          <h3>Privacy</h3>
+          <p>Avoid collecting personal information that is not needed for price estimation.</p>
+        </article>
+
+        <article class="ethic-card reveal">
+          <span>02</span>
+          <h3>Representation</h3>
+          <p>Check whether brands, price ranges and device types are adequately represented.</p>
+        </article>
+
+        <article class="ethic-card reveal">
+          <span>03</span>
+          <h3>Transparency</h3>
+          <p>Show data sources, collection dates, assumptions and model limitations.</p>
+        </article>
+
+        <article class="ethic-card reveal">
+          <span>04</span>
+          <h3>Responsible Use</h3>
+          <p>Explain that estimates are not guaranteed market prices or purchase advice.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="section conclusion-section">
+      <div class="conclusion-panel reveal">
+        <p class="section-kicker">PROJECT SUMMARY</p>
+        <h2>From Data to Insight.</h2>
+        <p>
+          This project can demonstrate the end-to-end workflow: collect raw data,
+          clean and explore it, visualize findings, train a suitable model,
+          evaluate its errors and review ethical considerations.
+        </p>
+        <a class="btn primary" href="#home">Back to Top ↑</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="logo footer-logo" href="#home">
+      <span>FDS</span><small>Mobile Price Prediction</small>
+    </a>
+    <p>End-to-End Data Science Mini Project</p>
+    <small>HTML · CSS · JavaScript</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
